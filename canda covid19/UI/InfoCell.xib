@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InfoCell" customModule="Canada_Covid_19" customModuleProvider="target">
+            <connections>
+                <outlet property="subValueLabel" destination="hsY-Vg-osA" id="qht-9c-OhI"/>
+                <outlet property="subValuePrefix" destination="Gm9-KW-wU5" id="xHC-Du-wWt"/>
+                <outlet property="subtitleLabel" destination="aBN-7h-N30" id="w6M-Xo-vpk"/>
+                <outlet property="titleLabel" destination="olT-1G-10c" id="1Q8-Be-yC4"/>
+                <outlet property="valueLabel" destination="Srs-Hs-E5t" id="Gz2-n8-q1n"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="eBF-Po-JCD">
+            <rect key="frame" x="0.0" y="0.0" width="248" height="113"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olT-1G-10c">
+                    <rect key="frame" x="0.0" y="0.0" width="248" height="26.5"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBN-7h-N30">
+                    <rect key="frame" x="0.0" y="26.5" width="248" height="14.5"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Srs-Hs-E5t">
+                    <rect key="frame" x="0.0" y="77.5" width="248" height="20.5"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sub Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsY-Vg-osA" customClass="EFCountingLabel" customModule="Canada_Covid_19" customModuleProvider="target">
+                    <rect key="frame" x="6" y="98" width="57" height="15"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gm9-KW-wU5">
+                    <rect key="frame" x="0.0" y="98" width="6" height="15"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Srs-Hs-E5t" secondAttribute="trailing" id="Aem-4c-etS"/>
+                <constraint firstItem="Srs-Hs-E5t" firstAttribute="leading" secondItem="eBF-Po-JCD" secondAttribute="leading" id="FSj-ue-9gX"/>
+                <constraint firstAttribute="bottom" secondItem="Gm9-KW-wU5" secondAttribute="bottom" id="JnL-Y1-dRa"/>
+                <constraint firstItem="Gm9-KW-wU5" firstAttribute="leading" secondItem="eBF-Po-JCD" secondAttribute="leading" id="K4C-GS-pxo"/>
+                <constraint firstAttribute="bottom" secondItem="hsY-Vg-osA" secondAttribute="bottom" id="Ldc-x6-tYz"/>
+                <constraint firstItem="aBN-7h-N30" firstAttribute="leading" secondItem="Yg4-hc-Mxn" secondAttribute="leading" id="Mhg-6A-MhQ"/>
+                <constraint firstItem="olT-1G-10c" firstAttribute="leading" secondItem="eBF-Po-JCD" secondAttribute="leading" id="VD9-ty-3aR"/>
+                <constraint firstItem="aBN-7h-N30" firstAttribute="top" secondItem="olT-1G-10c" secondAttribute="bottom" id="Z9y-ri-9G1"/>
+                <constraint firstItem="olT-1G-10c" firstAttribute="top" secondItem="eBF-Po-JCD" secondAttribute="top" id="dnp-r9-2We"/>
+                <constraint firstAttribute="trailing" secondItem="olT-1G-10c" secondAttribute="trailing" id="maO-O6-Oy7"/>
+                <constraint firstItem="hsY-Vg-osA" firstAttribute="top" secondItem="Srs-Hs-E5t" secondAttribute="bottom" id="n6J-Ud-ZHh"/>
+                <constraint firstItem="hsY-Vg-osA" firstAttribute="leading" secondItem="Gm9-KW-wU5" secondAttribute="trailing" id="rc2-25-ic4"/>
+                <constraint firstItem="aBN-7h-N30" firstAttribute="trailing" secondItem="Yg4-hc-Mxn" secondAttribute="trailing" id="thc-zU-jqq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Yg4-hc-Mxn"/>
+            <point key="canvasLocation" x="-356.80000000000001" y="-441.22938530734638"/>
+        </view>
+    </objects>
+</document>

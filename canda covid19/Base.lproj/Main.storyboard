@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="eU9-7D-Wqj" kind="relationship" relationship="viewControllers" id="TqT-FR-2i8"/>
+                        <segue destination="MOT-Md-a4b" kind="relationship" relationship="viewControllers" id="VUo-VZ-Omf"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="cJf-h9-BVM">
+            <objects>
+                <viewController id="H5u-x7-sut" customClass="MainViewController" customModule="Canada_Covid_19" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fMU-Lp-4j7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n60-eW-apL">
+                                <rect key="frame" x="0.0" y="44" width="375" height="287"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MnC-pw-IUU" customClass="BriefCell" customModule="Canada_Covid_19" customModuleProvider="target">
+                                        <rect key="frame" x="4" y="4" width="367" height="279"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="MnC-pw-IUU" firstAttribute="top" secondItem="n60-eW-apL" secondAttribute="top" constant="4" id="Cmd-Jz-ae0"/>
+                                    <constraint firstAttribute="bottom" secondItem="MnC-pw-IUU" secondAttribute="bottom" constant="4" id="Qek-Fa-cOg"/>
+                                    <constraint firstItem="MnC-pw-IUU" firstAttribute="leading" secondItem="n60-eW-apL" secondAttribute="leading" constant="4" id="dXf-u4-yP2"/>
+                                    <constraint firstAttribute="trailing" secondItem="MnC-pw-IUU" secondAttribute="trailing" constant="4" id="ucK-AE-yeo"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="weZ-CO-XZT">
+                                <rect key="frame" x="0.0" y="331" width="375" height="287"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wZw-jW-RP8" customClass="BriefCell" customModule="Canada_Covid_19" customModuleProvider="target">
+                                        <rect key="frame" x="4" y="4" width="367" height="279"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="wZw-jW-RP8" secondAttribute="trailing" constant="4" id="3wZ-lu-Oj5"/>
+                                    <constraint firstItem="wZw-jW-RP8" firstAttribute="top" secondItem="weZ-CO-XZT" secondAttribute="top" constant="4" id="HCS-52-LN5"/>
+                                    <constraint firstItem="wZw-jW-RP8" firstAttribute="leading" secondItem="weZ-CO-XZT" secondAttribute="leading" constant="4" id="TN4-6y-vK2"/>
+                                    <constraint firstAttribute="bottom" secondItem="wZw-jW-RP8" secondAttribute="bottom" constant="4" id="gg5-k6-Bv5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="n60-eW-apL" firstAttribute="height" secondItem="tjT-7b-bZK" secondAttribute="height" multiplier="0.5" id="6lD-t4-EF0"/>
+                            <constraint firstItem="weZ-CO-XZT" firstAttribute="height" secondItem="tjT-7b-bZK" secondAttribute="height" multiplier="0.5" id="7aS-cf-gRz"/>
+                            <constraint firstItem="n60-eW-apL" firstAttribute="leading" secondItem="fMU-Lp-4j7" secondAttribute="leading" id="Dnx-GS-b6u"/>
+                            <constraint firstAttribute="trailing" secondItem="weZ-CO-XZT" secondAttribute="trailing" id="Jz4-np-WfQ"/>
+                            <constraint firstAttribute="trailing" secondItem="n60-eW-apL" secondAttribute="trailing" id="M1c-lc-Yxj"/>
+                            <constraint firstItem="weZ-CO-XZT" firstAttribute="bottom" secondItem="tjT-7b-bZK" secondAttribute="bottom" id="MT8-za-TYf"/>
+                            <constraint firstItem="weZ-CO-XZT" firstAttribute="leading" secondItem="fMU-Lp-4j7" secondAttribute="leading" id="aDI-ek-oYD"/>
+                            <constraint firstItem="n60-eW-apL" firstAttribute="top" secondItem="tjT-7b-bZK" secondAttribute="top" id="x5F-mw-SCN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tjT-7b-bZK"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="WEg-zi-QYq">
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="BYg-KU-Esc">
+                            <connections>
+                                <action selector="refresh:" destination="H5u-x7-sut" id="V84-f5-1CN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bottomCell" destination="wZw-jW-RP8" id="7Kv-tc-ayn"/>
+                        <outlet property="canadaWrapper" destination="n60-eW-apL" id="4XH-VP-4qV"/>
+                        <outlet property="ontorioWrapper" destination="weZ-CO-XZT" id="5VS-mr-mB1"/>
+                        <outlet property="topCell" destination="MnC-pw-IUU" id="if1-Nd-1YZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ARI-eD-nS0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1976.8" y="-219.94002998500753"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="t9f-8N-YDr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eU9-7D-Wqj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="Kn7-VK-mUQ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mrm-2M-gsj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="H5u-x7-sut" kind="relationship" relationship="rootViewController" id="vpH-GR-QEw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yKX-hx-Lya" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1037.5999999999999" y="-219.94002998500753"/>
+        </scene>
+        <!--Provinces Table View Controller-->
+        <scene sceneID="09E-fd-X6q">
+            <objects>
+                <tableViewController id="wDf-0w-VXf" customClass="ProvincesTableViewController" customModule="Canada_Covid_19" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="vkq-xC-L1m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="A3h-t9-HM6" detailTextLabel="VX8-lg-h82" style="IBUITableViewCellStyleSubtitle" id="b0I-6Z-eXP">
+                                <rect key="frame" x="0.0" y="28" width="375" height="55.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b0I-6Z-eXP" id="eAm-Q3-hwp">
+                                    <rect key="frame" x="0.0" y="0.0" width="348" height="55.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="A3h-t9-HM6">
+                                            <rect key="frame" x="16" y="10" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VX8-lg-h82">
+                                            <rect key="frame" x="16" y="31.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="wDf-0w-VXf" id="Mie-TA-gb9"/>
+                            <outlet property="delegate" destination="wDf-0w-VXf" id="Quc-E9-PFo"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="2jd-M6-ooi">
+                        <leftBarButtonItems>
+                            <barButtonItem title="A-Z" id="nrQ-9k-Nvs">
+                                <connections>
+                                    <action selector="sortAZ:" destination="wDf-0w-VXf" id="hwz-Hn-mvX"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="1-9" id="sOP-12-7ZI">
+                                <connections>
+                                    <action selector="sort19:" destination="wDf-0w-VXf" id="4CO-or-IRL"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="J7k-IX-esQ" kind="showDetail" identifier="Show Details" id="msd-9T-dlW"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pKB-JO-0bQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1977" y="499"/>
+        </scene>
+        <!--Provinces-->
+        <scene sceneID="Ogf-vu-aAT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MOT-Md-a4b" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Provinces" image="map" id="kuc-YZ-J5c"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qLW-5p-WAD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wDf-0w-VXf" kind="relationship" relationship="rootViewController" id="p2I-E9-hUW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S91-ne-y98" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1004" y="498.80059970014997"/>
+        </scene>
+        <!--Province Detail View Controller-->
+        <scene sceneID="7CR-Du-zUB">
+            <objects>
+                <viewController id="J7k-IX-esQ" customClass="ProvinceDetailViewController" customModule="Canada_Covid_19" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KbC-1X-3XN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eyl-vw-u1P">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="done" id="Cdo-vJ-usz">
+                                        <connections>
+                                            <action selector="dismiss:" destination="J7k-IX-esQ" id="Bq3-QO-4mz"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Rqb-Ru-Eh5"/>
+                                    <barButtonItem systemItem="action" id="lhq-0K-uM7"/>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data from: https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection.html" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfC-gJ-hRz">
+                                <rect key="frame" x="20" y="414" width="335" height="29"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
+                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AuG-hM-tw6">
+                                <rect key="frame" x="20" y="440" width="105" height="30"/>
+                                <state key="normal" title="Open in Safarai"/>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="00l-KM-6XF">
+                                <rect key="frame" x="38" y="60" width="299" height="32"/>
+                                <segments>
+                                    <segment title="All Times"/>
+                                    <segment title="Last 30 Days"/>
+                                    <segment title="Last 14 Days"/>
+                                </segments>
+                                <connections>
+                                    <action selector="timePeriodChange:" destination="J7k-IX-esQ" eventType="valueChanged" id="aQ1-dV-rY4"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d1O-cg-Ez0" customClass="BriefCell" customModule="Canada_Covid_19" customModuleProvider="target">
+                                <rect key="frame" x="4" y="107" width="367.5" height="291"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="00l-KM-6XF" firstAttribute="centerX" secondItem="KbC-1X-3XN" secondAttribute="centerX" id="30S-KX-e4V"/>
+                            <constraint firstItem="00l-KM-6XF" firstAttribute="top" secondItem="eyl-vw-u1P" secondAttribute="bottom" constant="16" id="9sx-h3-tCi"/>
+                            <constraint firstItem="RfC-gJ-hRz" firstAttribute="leading" secondItem="KbC-1X-3XN" secondAttribute="leading" constant="20" symbolic="YES" id="BCt-aB-MRS"/>
+                            <constraint firstItem="eyl-vw-u1P" firstAttribute="top" secondItem="TFg-H3-oWr" secondAttribute="top" id="MbY-dT-yb5"/>
+                            <constraint firstItem="AuG-hM-tw6" firstAttribute="top" secondItem="RfC-gJ-hRz" secondAttribute="baseline" id="Qv0-kt-2XJ"/>
+                            <constraint firstItem="eyl-vw-u1P" firstAttribute="trailing" secondItem="TFg-H3-oWr" secondAttribute="trailing" id="VWl-ju-hjv"/>
+                            <constraint firstItem="d1O-cg-Ez0" firstAttribute="height" secondItem="KbC-1X-3XN" secondAttribute="height" multiplier="0.45" id="XdT-fe-URV"/>
+                            <constraint firstItem="eyl-vw-u1P" firstAttribute="leading" secondItem="TFg-H3-oWr" secondAttribute="leading" id="c6b-Yd-IIz"/>
+                            <constraint firstItem="RfC-gJ-hRz" firstAttribute="top" secondItem="d1O-cg-Ez0" secondAttribute="bottom" constant="16" id="cGg-Ru-G56"/>
+                            <constraint firstItem="d1O-cg-Ez0" firstAttribute="width" secondItem="TFg-H3-oWr" secondAttribute="width" multiplier="0.98" id="dQ4-0r-HyF"/>
+                            <constraint firstAttribute="trailing" secondItem="RfC-gJ-hRz" secondAttribute="trailing" constant="20" symbolic="YES" id="fOK-Kf-9jx"/>
+                            <constraint firstItem="d1O-cg-Ez0" firstAttribute="top" secondItem="00l-KM-6XF" secondAttribute="bottom" constant="16" id="gAK-cR-URo"/>
+                            <constraint firstItem="AuG-hM-tw6" firstAttribute="leading" secondItem="RfC-gJ-hRz" secondAttribute="leading" id="gIu-Rx-Etz"/>
+                            <constraint firstItem="d1O-cg-Ez0" firstAttribute="centerX" secondItem="KbC-1X-3XN" secondAttribute="centerX" id="sNw-S8-Ge4"/>
+                            <constraint firstItem="TFg-H3-oWr" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AuG-hM-tw6" secondAttribute="trailing" symbolic="YES" id="x7d-zY-89b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TFg-H3-oWr"/>
+                    </view>
+                    <connections>
+                        <outlet property="topCell" destination="d1O-cg-Ez0" id="JR9-kw-dNm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fCB-7H-tPJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2830" y="499"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="home" width="30" height="30"/>
+        <image name="map" width="25" height="25"/>
+    </resources>
+</document>

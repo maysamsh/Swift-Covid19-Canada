@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BriefCell" customModule="Canada_Covid_19" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomLabel" destination="feQ-jx-eUP" id="gnU-EI-8Bh"/>
+                <outlet property="bottomLeftLabel" destination="PDj-qf-sTn" id="omf-ZZ-cGy"/>
+                <outlet property="bottomRightLabel" destination="tA5-4M-NHe" id="yAd-7f-yB1"/>
+                <outlet property="centerCell" destination="6jZ-vy-AdK" id="vyu-kX-uJf"/>
+                <outlet property="chart" destination="0WA-VI-ybI" id="kWd-eb-vU2"/>
+                <outlet property="leftCell" destination="o8T-5y-LID" id="vdk-Ce-rSF"/>
+                <outlet property="rightCell" destination="ljX-4j-Hg7" id="zrL-u7-rbT"/>
+                <outlet property="topLeftLabel" destination="hyg-vB-LDR" id="8dH-9z-Vb1"/>
+                <outlet property="topRightLabel" destination="mHJ-W6-jq5" id="e6u-Qr-508"/>
+                <outlet property="topWrapper" destination="2MP-eq-RpC" id="Qny-0T-smR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="avE-6Q-41d">
+            <rect key="frame" x="0.0" y="0.0" width="619" height="546"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iru-l2-Wvn">
+                    <rect key="frame" x="0.0" y="0.0" width="619" height="546"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2MP-eq-RpC">
+                            <rect key="frame" x="20" y="0.0" width="579" height="30"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="NCR-HZ-F5e">
+                                    <rect key="frame" x="20" y="2" width="539" height="26.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyg-vB-LDR">
+                                            <rect key="frame" x="0.0" y="0.0" width="41.5" height="26.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHJ-W6-jq5">
+                                            <rect key="frame" x="494" y="0.0" width="45" height="26.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="NCR-HZ-F5e" firstAttribute="leading" secondItem="2MP-eq-RpC" secondAttribute="leading" constant="20" symbolic="YES" id="2QN-aE-hqX"/>
+                                <constraint firstAttribute="height" constant="30" id="Jh7-Tp-Mok"/>
+                                <constraint firstItem="NCR-HZ-F5e" firstAttribute="centerY" secondItem="2MP-eq-RpC" secondAttribute="centerY" id="L3r-Vw-W5h"/>
+                                <constraint firstAttribute="trailing" secondItem="NCR-HZ-F5e" secondAttribute="trailing" constant="20" symbolic="YES" id="MfB-FH-3B4"/>
+                                <constraint firstItem="NCR-HZ-F5e" firstAttribute="centerY" secondItem="2MP-eq-RpC" secondAttribute="centerY" id="dUA-so-pd3"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1zQ-jY-eki">
+                            <rect key="frame" x="20" y="29" width="579" height="1"/>
+                            <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1.2" id="G53-cZ-xTF"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Cjj-nG-5D7">
+                            <rect key="frame" x="20" y="34" width="579" height="70"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" horizontalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="o8T-5y-LID" customClass="InfoCell" customModule="Canada_Covid_19" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="145" height="70"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="70" id="lcV-3e-Kga"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" horizontalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="6jZ-vy-AdK" customClass="InfoCell" customModule="Canada_Covid_19" customModuleProvider="target">
+                                    <rect key="frame" x="202.5" y="0.0" width="145" height="70"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="70" id="w64-Gs-Uqp"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" horizontalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="ljX-4j-Hg7" customClass="InfoCell" customModule="Canada_Covid_19" customModuleProvider="target">
+                                    <rect key="frame" x="376.5" y="0.0" width="202.5" height="70"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="70" id="oBg-Oz-Ryp"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="6jZ-vy-AdK" firstAttribute="width" secondItem="Cjj-nG-5D7" secondAttribute="width" multiplier="0.25" id="2ii-mY-eAo"/>
+                                <constraint firstItem="o8T-5y-LID" firstAttribute="width" secondItem="Cjj-nG-5D7" secondAttribute="width" multiplier="0.25" id="7hG-fM-vp1"/>
+                                <constraint firstItem="ljX-4j-Hg7" firstAttribute="width" secondItem="Cjj-nG-5D7" secondAttribute="width" multiplier="0.35" id="fv4-bj-xPV"/>
+                            </constraints>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iWA-i4-peQ">
+                            <rect key="frame" x="20" y="104" width="579" height="35"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="iNP-6B-nUC">
+                                    <rect key="frame" x="0.0" y="0.0" width="579" height="35"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="CCd-fW-DHR">
+                                            <rect key="frame" x="0.0" y="0.0" width="579" height="16"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Death Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDj-qf-sTn">
+                                                    <rect key="frame" x="0.0" y="0.0" width="67.5" height="16"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doubling Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tA5-4M-NHe">
+                                                    <rect key="frame" x="491" y="0.0" width="88" height="16"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feQ-jx-eUP">
+                                            <rect key="frame" x="0.0" y="24" width="579" height="11"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="iNP-6B-nUC" secondAttribute="trailing" id="AnF-uP-k2g"/>
+                                <constraint firstItem="iNP-6B-nUC" firstAttribute="top" secondItem="iWA-i4-peQ" secondAttribute="top" id="G9F-c4-Hjt"/>
+                                <constraint firstAttribute="bottom" secondItem="iNP-6B-nUC" secondAttribute="bottom" id="Jht-k6-vRq"/>
+                                <constraint firstItem="iNP-6B-nUC" firstAttribute="leading" secondItem="iWA-i4-peQ" secondAttribute="leading" id="K4s-AO-ovX"/>
+                                <constraint firstAttribute="height" constant="35" id="eCH-bo-ejd"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0WA-VI-ybI" customClass="CombinedChartView" customModule="Charts">
+                            <rect key="frame" x="20" y="139" width="579" height="403"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="2MP-eq-RpC" firstAttribute="top" secondItem="Iru-l2-Wvn" secondAttribute="top" id="1Bj-4U-c7s"/>
+                        <constraint firstItem="0WA-VI-ybI" firstAttribute="leading" secondItem="Iru-l2-Wvn" secondAttribute="leading" constant="20" symbolic="YES" id="6ua-M2-t0B"/>
+                        <constraint firstAttribute="trailing" secondItem="2MP-eq-RpC" secondAttribute="trailing" constant="20" symbolic="YES" id="DUc-TI-KCj"/>
+                        <constraint firstAttribute="trailing" secondItem="0WA-VI-ybI" secondAttribute="trailing" constant="20" symbolic="YES" id="DtK-Gu-56J"/>
+                        <constraint firstAttribute="trailing" secondItem="Cjj-nG-5D7" secondAttribute="trailing" constant="20" symbolic="YES" id="EBv-Vt-nqg"/>
+                        <constraint firstAttribute="trailing" secondItem="iWA-i4-peQ" secondAttribute="trailing" constant="20" symbolic="YES" id="FTP-54-pyX"/>
+                        <constraint firstItem="0WA-VI-ybI" firstAttribute="top" secondItem="iWA-i4-peQ" secondAttribute="bottom" id="JDC-2z-lEz"/>
+                        <constraint firstAttribute="bottom" secondItem="0WA-VI-ybI" secondAttribute="bottom" constant="4" id="Q0U-Yg-uOe"/>
+                        <constraint firstItem="2MP-eq-RpC" firstAttribute="leading" secondItem="Iru-l2-Wvn" secondAttribute="leading" constant="20" symbolic="YES" id="Ytd-6E-3ug"/>
+                        <constraint firstItem="Cjj-nG-5D7" firstAttribute="leading" secondItem="Iru-l2-Wvn" secondAttribute="leading" constant="20" symbolic="YES" id="dS5-83-9bv"/>
+                        <constraint firstItem="1zQ-jY-eki" firstAttribute="bottom" secondItem="2MP-eq-RpC" secondAttribute="bottom" id="hrR-FC-Tfr"/>
+                        <constraint firstItem="iWA-i4-peQ" firstAttribute="top" secondItem="Cjj-nG-5D7" secondAttribute="bottom" id="lGM-yK-jhk"/>
+                        <constraint firstItem="iWA-i4-peQ" firstAttribute="leading" secondItem="Iru-l2-Wvn" secondAttribute="leading" constant="20" symbolic="YES" id="rbi-fR-cX3"/>
+                        <constraint firstItem="1zQ-jY-eki" firstAttribute="leading" secondItem="2MP-eq-RpC" secondAttribute="leading" id="wGX-0P-jLS"/>
+                        <constraint firstItem="1zQ-jY-eki" firstAttribute="width" secondItem="2MP-eq-RpC" secondAttribute="width" id="x1s-Wq-gA5"/>
+                        <constraint firstItem="1zQ-jY-eki" firstAttribute="trailing" secondItem="2MP-eq-RpC" secondAttribute="trailing" id="ywY-qT-OWl"/>
+                        <constraint firstItem="Cjj-nG-5D7" firstAttribute="top" secondItem="2MP-eq-RpC" secondAttribute="bottom" constant="4" id="zTS-Nz-H8x"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Iru-l2-Wvn" secondAttribute="bottom" id="243-Kz-VCK"/>
+                <constraint firstAttribute="trailing" secondItem="Iru-l2-Wvn" secondAttribute="trailing" id="Vq3-Jk-79U"/>
+                <constraint firstItem="Iru-l2-Wvn" firstAttribute="top" secondItem="avE-6Q-41d" secondAttribute="top" id="XlK-nq-0r5"/>
+                <constraint firstItem="Iru-l2-Wvn" firstAttribute="leading" secondItem="avE-6Q-41d" secondAttribute="leading" id="ujA-fm-3h0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="dAR-ap-dFK"/>
+            <point key="canvasLocation" x="-357.1875" y="26.25"/>
+        </view>
+    </objects>
+</document>
