@@ -214,7 +214,11 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Rqb-Ru-Eh5"/>
-                                    <barButtonItem systemItem="action" id="lhq-0K-uM7"/>
+                                    <barButtonItem systemItem="action" id="lhq-0K-uM7">
+                                        <connections>
+                                            <action selector="share:" destination="J7k-IX-esQ" id="20e-mL-UuE"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data from: https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection.html" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfC-gJ-hRz">

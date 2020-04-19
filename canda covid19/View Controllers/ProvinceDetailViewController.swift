@@ -39,11 +39,7 @@ class ProvinceDetailViewController: UIViewController {
         if let firstRow = cellData.first {
             topCell.setTitle(title: firstRow.provinceName, for: .left)
         }
-        
-        let lastTwoRows = cellData.getLastTwo()!
-        print(self.deliveryManager.getDeathRate(for: lastTwoRows))
-        print(self.deliveryManager.getDoublingTime(for: lastTwoRows))
-        
+                
         if  let lastTwoRows = cellData.getLastTwo(),
             let deathrate = self.deliveryManager.getDeathRate(for: lastTwoRows)
         {
@@ -67,6 +63,16 @@ class ProvinceDetailViewController: UIViewController {
     
     @IBAction func dismiss(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func share(_ sender: UIBarButtonItem) {
+        if let image = topCell.takeScreenshot() {
+            let activityViewController =
+                UIActivityViewController(activityItems: [image],
+                                         applicationActivities: nil)
+
+            present(activityViewController, animated: true)
+        }
     }
     
     @IBAction func timePeriodChange(_ sender: UISegmentedControl) {
