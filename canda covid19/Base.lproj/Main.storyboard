@@ -228,8 +228,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AuG-hM-tw6">
-                                <rect key="frame" x="20" y="440" width="105" height="30"/>
-                                <state key="normal" title="Open in Safarai"/>
+                                <rect key="frame" x="20" y="440" width="97" height="30"/>
+                                <state key="normal" title="Open in Safari"/>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="00l-KM-6XF">
                                 <rect key="frame" x="38" y="60" width="299" height="32"/>
